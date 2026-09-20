@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+table td{
+    @apply border border-gray-300 p-1.5;
+}
+.__aside_ul__ li{
+    @apply my-7 flex gap-2;
+}

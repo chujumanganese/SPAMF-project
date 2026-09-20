@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPAMF Dashboard</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <script src="/js/alpine.js" defer></script>
+    <script src="/js/lucide.js"></script>
+</head>
+<body class="h-dvh" x-data="{screen: false}">
+    <div class="flex h-full">
+        <aside class="w-2/12 p-4">
+            <ul class="__aside_ul__">
+                <li> 
+                    <i data-lucide="layout-dashboard" class="text-lg"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li>
+                    <i data-lucide="shield-check" class="text-lg"></i>
+                    <span>Security</span>
+                </li>
+                <li>
+                    <i data-lucide="settings" class="text-lg"></i>
+                    <span>Settings</span>
+                </li>
+                <li>
+                    <i data-lucide="scroll-text" class="text-lg"></i>
+                    <span>Logs</span>
+                </li>
+                <li>
+                    <i data-lucide="circle-help" class="text-lg"></i>
+                    <span>Help</span>
+                </li>
+            </ul>
+        </aside>
+        <div class="w-10/12">
+            <nav class="bg-green-800 p-4 text-white">
+                <h1 class="text-xl font-bold">SPAMF Dashboard</h1>
+            </nav>
+            <div class="p-4">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        lucide.createIcons();
+    </script>
+</body>
+</html>
