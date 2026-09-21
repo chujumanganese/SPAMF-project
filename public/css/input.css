@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
-table td{
-    @apply border border-gray-300 p-1.5;
+table th{
+    @apply border border-gray-300 p-1.5 text-gray-500;
 }
 .__aside_ul__ li{
-    @apply my-7 flex gap-2;
+    @apply my-7 flex gap-2 cursor-pointer p-4;
+}
+.__aside_ul__ li:hover{
+    @apply bg-white;
 }

@@ -8,9 +8,10 @@
     <script src="/js/alpine.js" defer></script>
     <script src="/js/lucide.js"></script>
 </head>
-<body class="h-dvh" x-data="{screen: false}">
+<body class="h-dvh bg-[#e9edc9]" x-data="{screen: false}">
     <div class="flex h-full">
-        <aside class="w-2/12 p-4">
+        <aside class="w-2/12 py-4 bg-[#a7c957]">
+            <h1 class="text-white font-extrabold text-3xl ms-3">SPAMF</h1>
             <ul class="__aside_ul__">
                 <li> 
                     <i data-lucide="layout-dashboard" class="text-lg"></i>
@@ -35,10 +36,10 @@
             </ul>
         </aside>
         <div class="w-10/12">
-            <nav class="bg-green-800 p-4 text-white">
+            <nav class="p-4 text-white">
                 <h1 class="text-xl font-bold">SPAMF Dashboard</h1>
             </nav>
-            <div class="p-4">
+            <div class="py-4">
                 {{{body}}}
             </div>
         </div>

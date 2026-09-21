@@ -1,18 +1,16 @@
-<div class="container mx-auto p-4 scan">
-    <div>
+<div class="container mx-auto py-4 scan">
+    <div class="p-3 mb-3">
         <h1 class="font-bold text-3xl mb-2">Add new origin configuration </h1>
-        <form method="post" action="/scanwebsite">
-            <p>Add new origin</p>
-            <div class="flex gap-3 my-4">
-                <input type="text" class="border-2">
-                <select name="" id="">
-                    <option value="">HTTP</option>
-                    <option value="">HTTPS</option>
-                </select>
-                <input type="text" placeholder="port">
-                <button class="bg-green-800 text-white px-4 py-2">Add entry</button>
-            </div>
-        </form>
+        <p>Add new origin</p>
+        <div class="flex gap-3 my-4">
+            <input type="text" class="border">
+            <select name="" id="" class="border">
+                <option value="">HTTP</option>
+                <option value="">HTTPS</option>
+            </select>
+            <input type="text" placeholder="port" class="border">
+            <button class="bg-green-800 text-white px-4 py-2 rounded cursor-pointer">Add Entry</button>
+        </div>
     </div>
     <div>
         <table class="border w-full">
