@@ -9,3 +9,6 @@ table th{
 .__aside_ul__ li:hover{
     @apply bg-white ps-10;
 }
+input, select{
+    @apply border border-gray-600 p-1.5 rounded-md ;
+}
