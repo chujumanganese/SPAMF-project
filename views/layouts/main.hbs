@@ -13,37 +13,37 @@
         <aside class="w-2/12 py-4 bg-[#a7c957]">
             <h1 class="text-[#fefae0] font-extrabold text-3xl ms-3 mb-6">SPAMF</h1>
             <div class="flex flex-col gap-4">
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
-                @click="screen = 'dashboard'">
-                    <i data-lucide="LayoutDashboard"></i> Dashboard
+                <a href="#" class="flex items-center gap-3 px-3 py-3 hover:bg-white/5"
+                @click="screen = 'dashboard'" :class="screen === 'dashboard' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="LayoutDashboard" :class="screen === 'dashboard' ? 'text-[#70593c]' : ''" ></i> Dashboard
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md  hover:bg-white/5"
-                @click="screen = 'audit-log'">
-                    <i data-lucide="Grid2X2"></i> Audit
+                <a href="#" class="flex items-center gap-3 px-3 py-3 hover:bg-white/5"
+                @click="screen = 'audit-log'" :class="screen === 'audit-log' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="Grid2X2" :class="screen === 'audit-log' ? 'text-[#70593c]' : ''" ></i> Audit
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md bg-cyan-500/10  border border-cyan-500/30"
-                @click="screen = 'vulnerability'">
-                    <i data-lucide="Shield"></i> Vulnerability
+                <a href="#" class="flex items-center gap-3 px-3 py-3"
+                @click="screen = 'vulnerability'" :class="screen === 'vulnerability' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="Shield" :class="screen === 'vulnerability' ? 'text-[#70593c]' : ''" ></i> Vulnerability
                 </a>
-                <a href="#" class="flex items-center gap-3 pl-10 pr-3 py-1.5 text-sm"
-                @click="screen = 'manifest'">
-                    <i data-lucide="FileText"></i> Manifest
+                <a href="#" class="flex items-center gap-3 pl-10 pr-3 py-3 text-sm"
+                @click="screen = 'manifest'" :class="screen === 'manifest' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="FileText" :class="screen === 'manifest' ? 'text-[#70593c]' : ''" ></i> Manifest
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5 mt-2"
-                @click="screen = 'notifications'">
-                    <i data-lucide="Bell"></i> Notifications
+                <a href="#" class="flex items-center gap-3 px-3 py-3  hover:bg-white/5 mt-2"
+                @click="screen = 'notifications'" :class="screen === 'notifications' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="Bell" :class="screen === 'notifications' ? 'text-[#70593c]' : ''" ></i> Notifications
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
-                @click="screen = 'services'">
-                    <i data-lucide="Settings"></i> Services
+                <a href="#" class="flex items-center gap-3 px-3 py-3 hover:bg-white/5"
+                @click="screen = 'services'" :class="screen === 'services' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="Settings" :class="screen === 'services' ? 'text-[#70593c]' : ''" ></i> Services
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
-                @click="screen = 'help'">
-                    <i data-lucide="HelpCircle"></i> Help
+                <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-md hover:bg-white/5"
+                @click="screen = 'help'" :class="screen === 'help' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="HelpCircle" :class="screen === 'help' ? 'text-[#70593c]' : ''" ></i> Help
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
-                @click="screen = 'settings'">
-                    <i data-lucide="Cog"></i> Settings
+                <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-md hover:bg-white/5"
+                @click="screen = 'settings'" :class="screen === 'settings' ? 'bg-[#ecf39e]' : ''">
+                    <i data-lucide="Cog" :class="screen === 'settings' ? 'text-[#70593c]' : ''"></i> Settings
                 </a>
             </div>
         </aside>
