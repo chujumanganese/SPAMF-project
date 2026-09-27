@@ -22,6 +22,9 @@ app.get("/scan", scanController);
 app.get("/vulnerability-report", (req, res) => {
   res.render("vulnerability-manifest", { title: "Vulnerability Report" });
 });
+app.get("/dashboard", (req, res) => {
+  res.render("spmms-dashboard", { title: "Dashboard" });
+});
 app.post("/scanwebsite", scanWebsite);
 
 const PORT = process.env.PORT || 3000;

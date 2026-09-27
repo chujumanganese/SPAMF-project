@@ -13,28 +13,36 @@
         <aside class="w-2/12 py-4 bg-[#a7c957]">
             <h1 class="text-[#fefae0] font-extrabold text-3xl ms-3 mb-6">SPAMF</h1>
             <div class="flex flex-col gap-4">
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
+                @click="screen = 'dashboard'">
                     <i data-lucide="LayoutDashboard"></i> Dashboard
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md  hover:bg-white/5">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md  hover:bg-white/5"
+                @click="screen = 'overview'">
                     <i data-lucide="Grid2X2"></i> Overview
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md bg-cyan-500/10  border border-cyan-500/30">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md bg-cyan-500/10  border border-cyan-500/30"
+                @click="screen = 'vulnerability'">
                     <i data-lucide="Shield"></i> Vulnerability
                 </a>
-                <a href="#" class="flex items-center gap-3 pl-10 pr-3 py-1.5 text-sm">
+                <a href="#" class="flex items-center gap-3 pl-10 pr-3 py-1.5 text-sm"
+                @click="screen = 'vulnerability-manifest'">
                     <i data-lucide="FileText"></i> Manifest
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5 mt-2">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5 mt-2"
+                @click="screen = 'notifications'">
                     <i data-lucide="Bell"></i> Notifications
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
+                @click="screen = 'services'">
                     <i data-lucide="Settings"></i> Services
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
+                @click="screen = 'help'">
                     <i data-lucide="HelpCircle"></i> Help
                 </a>
-                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5"
+                @click="screen = 'settings'">
                     <i data-lucide="Cog"></i> Settings
                 </a>
             </div>
