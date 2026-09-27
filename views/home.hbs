@@ -1,9 +1,17 @@
-<div x-show="screen === 'dashboard'">
-    {{> spmms-dashboard }}
-</div>
-<div x-show="screen === 'vulnerability'">
-    {{> vulnerability-manifest }}
-</div>
-<div x-show="screen === 'settings'">
-    {{> settings }}
+<div>
+    <div x-show="screen === 'audit-log'">
+        {{> audit-log }}
+    </div>
+    <div x-show="screen === 'vulnerability'">
+        {{> vulnerability-manifest }}
+    </div>
+    <div x-show="screen === 'dashboard'">
+        {{> spmms-dashboard }}
+    </div>
+    <div x-show="screen === 'manifest'">
+        {{> handler }}
+    </div>
+    <div x-show="screen === 'settings'">
+        {{> settings }}
+    </div>
 </div>
