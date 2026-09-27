@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SPMMS Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0d1117] text-slate-200 font-sans">
+
+<div class="flex h-screen overflow-hidden">
+
+  <!-- Sidebar -->
+  <aside class="w-56 shrink-0 border-r border-white/5 flex flex-col pt-4">
+    <nav class="space-y-1 px-3 text-sm">
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md bg-cyan-500/10 text-cyan-300 border-l-2 border-cyan-400">
+        <span>▦</span> Dashboard
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md text-slate-400 hover:bg-white/5">
+        <span>🔍</span> Scans
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md text-slate-400 hover:bg-white/5">
+        <span>🛡️</span> Policies
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md text-slate-400 hover:bg-white/5">
+        <span>📄</span> Audit Log
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md text-slate-400 hover:bg-white/5">
+        <span>📊</span> Reports
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <div class="flex-1 flex flex-col min-w-0 overflow-auto">
+
+    <!-- Top bar -->
+    <header class="h-16 shrink-0 flex items-center justify-between px-6 border-b border-white/5">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full border-2 border-cyan-400 flex items-center justify-center text-cyan-400">🛡️</div>
+        <h1 class="text-lg font-semibold text-white">SPMMS - Secure PostMessage Monitoring &amp; Mitigation Framework</h1>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <span>👤</span>
+        <span>⚙️</span>
+      </div>
+    </header>
+
+    <main class="p-6">
+      <h2 class="text-2xl font-semibold text-white mb-5">Dashboard</h2>
+
+      <!-- Stat cards -->
+      <div class="grid grid-cols-4 gap-5 mb-6">
+
+        <div class="bg-[#151b26] border border-white/5 rounded-xl p-5">
+          <p class="text-slate-400 text-sm mb-1">Active Threats</p>
+          <p class="text-3xl font-semibold text-white mb-3">23</p>
+          <svg viewBox="0 0 200 50" class="w-full h-10">
+            <defs>
+              <linearGradient id="redFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <polyline fill="none" stroke="#f43f5e" stroke-width="2"
+              points="0,35 15,30 30,38 45,22 60,32 75,18 90,28 105,15 120,25 135,12 150,20 165,10 180,18 200,8" />
+            <polygon fill="url(#redFill)"
+              points="0,35 15,30 30,38 45,22 60,32 75,18 90,28 105,15 120,25 135,12 150,20 165,10 180,18 200,8 200,50 0,50" />
+          </svg>
+        </div>
+
+        <div class="bg-[#151b26] border border-white/5 rounded-xl p-5">
+          <p class="text-slate-400 text-sm mb-1">Blocked Messages</p>
+          <p class="text-3xl font-semibold text-white mb-3">1,452</p>
+          <svg viewBox="0 0 200 50" class="w-full h-10">
+            <polyline fill="none" stroke="#f43f5e" stroke-width="2"
+              points="0,32 15,36 30,25 45,30 60,20 75,28 90,16 105,24 120,14 135,22 150,12 165,18 180,10 200,15" />
+            <polygon fill="url(#redFill)"
+              points="0,32 15,36 30,25 45,30 60,20 75,28 90,16 105,24 120,14 135,22 150,12 165,18 180,10 200,15 200,50 0,50" />
+          </svg>
+        </div>
+
+        <div class="bg-[#151b26] border border-white/5 rounded-xl p-5">
+          <p class="text-slate-400 text-sm mb-1">Policy Coverage %</p>
+          <p class="text-3xl font-semibold text-white mb-3">94%</p>
+          <svg viewBox="0 0 200 50" class="w-full h-10">
+            <defs>
+              <linearGradient id="cyanFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <polyline fill="none" stroke="#22d3ee" stroke-width="2"
+              points="0,40 15,36 30,32 45,34 60,25 75,28 90,18 105,22 120,12 135,16 150,8 165,12 180,6 200,10" />
+            <polygon fill="url(#cyanFill)"
+              points="0,40 15,36 30,32 45,34 60,25 75,28 90,18 105,22 120,12 135,16 150,8 165,12 180,6 200,10 200,50 0,50" />
+          </svg>
+        </div>
+
+        <div class="bg-[#151b26] border border-white/5 rounded-xl p-5">
+          <p class="text-slate-400 text-sm mb-1">Handlers Monitored</p>
+          <p class="text-3xl font-semibold text-white mb-3">568</p>
+          <svg viewBox="0 0 200 50" class="w-full h-10">
+            <polyline fill="none" stroke="#22d3ee" stroke-width="2"
+              points="0,38 15,30 30,34 45,24 60,30 75,20 90,26 105,16 120,22 135,14 150,20 165,10 180,16 200,12" />
+            <polygon fill="url(#cyanFill)"
+              points="0,38 15,30 30,34 45,24 60,30 75,20 90,26 105,16 120,22 135,14 150,20 165,10 180,16 200,12 200,50 0,50" />
+          </svg>
+        </div>
+
+      </div>
+
+      <!-- Charts row -->
+      <div class="grid grid-cols-[1fr_360px] gap-5">
+
+        <!-- Line chart -->
+        <div class="bg-[#151b26] border border-white/5 rounded-xl p-6">
+          <h3 class="text-white font-medium mb-4">Blocked vs Allowed postMessage Events Over Time</h3>
+
+          <div class="flex items-center gap-6 text-sm text-slate-300 mb-4">
+            <span class="flex items-center gap-2"><span class="w-3 h-0.5 bg-cyan-400 inline-block"></span> Allowed</span>
+            <span class="flex items-center gap-2"><span class="w-3 h-0.5 bg-red-500 inline-block"></span> Blocked</span>
+          </div>
+
+          <svg viewBox="0 0 760 260" class="w-full h-64">
+            <!-- gridlines -->
+            <g stroke="#ffffff14" stroke-width="1">
+              <line x1="40" y1="10" x2="740" y2="10" />
+              <line x1="40" y1="52" x2="740" y2="52" />
+              <line x1="40" y1="94" x2="740" y2="94" />
+              <line x1="40" y1="136" x2="740" y2="136" />
+              <line x1="40" y1="178" x2="740" y2="178" />
+              <line x1="40" y1="220" x2="740" y2="220" />
+            </g>
+            <!-- y labels -->
+            <g fill="#64748b" font-size="12" text-anchor="end" font-family="inherit">
+              <text x="34" y="14">250</text>
+              <text x="34" y="56">200</text>
+              <text x="34" y="98">150</text>
+              <text x="34" y="140">100</text>
+              <text x="34" y="182">50</text>
+              <text x="34" y="224">0</text>
+            </g>
+
+            <!-- allowed line (cyan) -->
+            <polyline fill="none" stroke="#22d3ee" stroke-width="2.5"
+              points="40,170 80,140 120,150 160,120 200,145 240,110 280,130 320,95 360,115 400,80 440,100 480,75 520,90 560,60 600,85 640,65 680,75 720,55" />
+            <!-- blocked line (red) -->
+            <polyline fill="none" stroke="#f43f5e" stroke-width="2.5"
+              points="40,220 80,205 120,215 160,200 200,210 240,195 280,205 320,190 360,198 400,188 440,196 480,185 520,192 560,182 600,190 640,180 680,186 720,178" />
+
+            <!-- x labels -->
+            <g fill="#64748b" font-size="12" font-family="inherit">
+              <text x="30" y="245">last 24 hours</text>
+              <text x="175" y="245">last hour</text>
+              <text x="330" y="245">last hour</text>
+              <text x="480" y="245">last hour</text>
+              <text x="630" y="245">last hour</text>
+            </g>
+          </svg>
+          <p class="text-center text-slate-500 text-sm mt-2">last 24 hours, last hour</p>
+        </div>
+
+        <!-- Donut chart -->
+        <div class="bg-[#151b26] border border-white/5 rounded-xl p-6">
+          <h3 class="text-white font-medium mb-6">Vulnerability Severity Distribution</h3>
+
+          <svg viewBox="0 0 200 200" class="w-full max-w-[240px] mx-auto">
+            <!-- Donut built from 4 stroked arcs, circumference = 2*pi*70 ≈ 439.8 -->
+            <g transform="rotate(-90 100 100)">
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#f43f5e" stroke-width="34"
+                stroke-dasharray="109.9 329.9" stroke-dashoffset="0" />
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#f97316" stroke-width="34"
+                stroke-dasharray="109.9 329.9" stroke-dashoffset="-109.9" />
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#eab308" stroke-width="34"
+                stroke-dasharray="109.9 329.9" stroke-dashoffset="-219.8" />
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#22d3ee" stroke-width="34"
+                stroke-dasharray="109.9 329.9" stroke-dashoffset="-329.7" />
+            </g>
+          </svg>
+
+          <div class="flex flex-wrap justify-center gap-4 mt-6 text-sm text-slate-300">
+            <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block"></span> critical</span>
+            <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-orange-500 inline-block"></span> high</span>
+            <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-yellow-500 inline-block"></span> medium</span>
+            <span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-cyan-400 inline-block"></span> low</span>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

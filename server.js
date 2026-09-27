@@ -19,6 +19,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/scan", scanController);
+app.get("/vulnerability-report", (req, res) => {
+  res.render("vulnerability-manifest", { title: "Vulnerability Report" });
+});
 app.post("/scanwebsite", scanWebsite);
 
 const PORT = process.env.PORT || 3000;

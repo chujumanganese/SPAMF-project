@@ -8,32 +8,36 @@
     <script src="/js/alpine.js" defer></script>
     <script src="/js/lucide.js"></script>
 </head>
-<body class="h-dvh bg-[#e9edc9]" x-data="{screen: false}">
+<body class="h-dvh bg-[#e9edc9]" x-data="{screen: 'dashboard'}">
     <div class="flex h-full">
         <aside class="w-2/12 py-4 bg-[#a7c957]">
-            <h1 class="text-[#fefae0] font-extrabold text-3xl ms-3">SPAMF</h1>
-            <ul class="__aside_ul__ mt-10">
-                <li> 
-                    <i data-lucide="layout-dashboard" class="text-lg"></i>
-                    <span>Dashboard</span>
-                </li>
-                <li>
-                    <i data-lucide="shield-check" class="text-lg"></i>
-                    <span>Security</span>
-                </li>
-                <li>
-                    <i data-lucide="settings" class="text-lg"></i>
-                    <span>Settings</span>
-                </li>
-                <li>
-                    <i data-lucide="scroll-text" class="text-lg"></i>
-                    <span>Logs</span>
-                </li>
-                <li>
-                    <i data-lucide="circle-help" class="text-lg"></i>
-                    <span>Help</span>
-                </li>
-            </ul>
+            <h1 class="text-[#fefae0] font-extrabold text-3xl ms-3 mb-6">SPAMF</h1>
+            <div class="flex flex-col gap-4">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                    <i data-lucide="LayoutDashboard"></i> Dashboard
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md  hover:bg-white/5">
+                    <i data-lucide="Grid2X2"></i> Overview
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md bg-cyan-500/10  border border-cyan-500/30">
+                    <i data-lucide="Shield"></i> Vulnerability
+                </a>
+                <a href="#" class="flex items-center gap-3 pl-10 pr-3 py-1.5 text-sm">
+                    <i data-lucide="FileText"></i> Manifest
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5 mt-2">
+                    <i data-lucide="Bell"></i> Notifications
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                    <i data-lucide="Settings"></i> Services
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                    <i data-lucide="HelpCircle"></i> Help
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-white/5">
+                    <i data-lucide="Cog"></i> Settings
+                </a>
+            </div>
         </aside>
         <div class="w-10/12 p-6">
             <nav class="">
