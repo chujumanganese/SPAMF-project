@@ -1,3 +1,9 @@
-<h1>Secure PostMessage Analysis and Mitigation Framework</h1>
-<p>Welcome to SPAMF.</p>
-<a href="/scan">start scan</a>
+<div x-show="screen === 'dashboard'">
+    {{> spmms-dashboard }}
+</div>
+<div x-show="screen === 'vulnerability'">
+    {{> vulnerability-manifest }}
+</div>
+<div x-show="screen === 'settings'">
+    {{> settings }}
+</div>

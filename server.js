@@ -10,22 +10,13 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "hbs");
 app.set("views", "./views");
 app.use(express.static("./public"));
-app.engine("hbs", engine({ defaultLayout: "main", extname: ".hbs" }));
+app.engine("hbs", engine({ defaultLayout: "main", extname: ".hbs", partialsDir: './views/partials' }));
 app.use(express.json());  
 
 
 app.get("/", (req, res) => {
   res.render("home", { title: "Home" });
 });
-
-app.get("/scan", scanController);
-app.get("/vulnerability-report", (req, res) => {
-  res.render("vulnerability-manifest", { title: "Vulnerability Report" });
-});
-app.get("/dashboard", (req, res) => {
-  res.render("spmms-dashboard", { title: "Dashboard" });
-});
-app.post("/scanwebsite", scanWebsite);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, "127.0.0.1", () => {
