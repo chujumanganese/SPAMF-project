@@ -25,6 +25,7 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-handlebars": "^9.0.1",
+    "http-proxy-middleware": "^4.2.0",
     "knex": "^3.3.0",
     "playwright": "^1.62.1",
     "sqlite": "^5.1.1",
